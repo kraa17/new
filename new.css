@@ -24,6 +24,27 @@
 	.blurb h3{
 		font-size: 22px !important;
 	}
+	#menu-icon {
+		display: inline-block !important;
+		color: white;
+		position: absolute;
+		float: right;
+		margin-right: 15px;
+		top: 50px;
+		right: 15px;
+	}
+	nav{
+		display: none;
+	}
+	#main-menu{
+		width: 100%;
+		border-bottom: 1px solid white;
+		border-top: 1px solid white;
+		margin-top: 15px;
+	}
+	#main-menu ul li {
+		display: block;
+	}
 }
 @media screen and (max-width: 732px){
 	.blurb{

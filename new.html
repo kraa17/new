@@ -5,14 +5,14 @@
 <link rel="stylesheet" type="text/css" href="new.css">
 <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
 <body>
 	<section id="section-1">
 		<div class="container">
 		<header>
 			<img src="assets/logo.png">
-			<nav>
+			<nav id="main-menu">
 				<ul>
 					<li class="active"><a href="#">Home</a>
 					</li>
@@ -26,6 +26,9 @@
 					</li>
 				</ul>
 			</nav>
+			<a href="#" id="menu-icon" onclick="toggleMenu();" style="display: none;">
+				<i class="fas fa-bars"></i>
+			</a>
 		</header>
 		<div id="main-heading-and-cta">
 			<h1>Hi there! We are the new kids on the block 
@@ -125,6 +128,19 @@
 			
 		</div>
 	</footer>
+
+<script>
+	function toggleMenu() {
+		  var x = document.getElementById("main-menu");
+  			if (x.style.display === "block") {
+   			 x.style.display = "none";
+ 			 } else {
+    		x.style.display = "block";
+		}
+	}	
+</script>
+
+
 
 </body>
 
